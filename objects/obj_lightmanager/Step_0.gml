@@ -8,7 +8,7 @@ if(global.lightgot == true){
 	instance_destroy(id);
 }
 
-
+//asldjflosadjflosaije
 
 
 
