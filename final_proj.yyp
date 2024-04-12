@@ -38,6 +38,7 @@
     {"id":{"name":"spr_floor2","path":"sprites/spr_floor2/spr_floor2.yy",},},
     {"id":{"name":"obj_lightmanager","path":"objects/obj_lightmanager/obj_lightmanager.yy",},},
     {"id":{"name":"obj_bridgemanager","path":"objects/obj_bridgemanager/obj_bridgemanager.yy",},},
+    {"id":{"name":"obj_filtermanager","path":"objects/obj_filtermanager/obj_filtermanager.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},},
     {"id":{"name":"obj_bullet","path":"objects/obj_bullet/obj_bullet.yy",},},

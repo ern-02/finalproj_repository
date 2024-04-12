@@ -21,6 +21,7 @@
     {"name":"spr_floor2","order":3,"path":"sprites/spr_floor2/spr_floor2.yy",},
     {"name":"obj_lightmanager","order":10,"path":"objects/obj_lightmanager/obj_lightmanager.yy",},
     {"name":"obj_bridgemanager","order":6,"path":"objects/obj_bridgemanager/obj_bridgemanager.yy",},
+    {"name":"obj_filtermanager","order":11,"path":"objects/obj_filtermanager/obj_filtermanager.yy",},
     {"name":"spr_player","order":1,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"obj_light","order":5,"path":"objects/obj_light/obj_light.yy",},
     {"name":"obj_bullet","order":9,"path":"objects/obj_bullet/obj_bullet.yy",},
