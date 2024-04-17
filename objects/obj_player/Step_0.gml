@@ -35,3 +35,4 @@ if(global.lightgot = true){
 		bullet.image_angle = bullet.direction;
 	}
 }
+
