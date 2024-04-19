@@ -10,6 +10,7 @@ if(global.nightmare == false){
 }
 
 if(place_meeting(x,y,obj_bullet)){
+	sprite_index = spr_monsterdead;
 	instance_destroy(id);
 	global.solved = true;
 }

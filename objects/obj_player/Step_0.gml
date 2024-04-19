@@ -17,11 +17,6 @@ if(keyboard_check(ord("A"))){
 	
 }
 
-if(place_meeting(x,y+sprite_width,obj_floor) || place_meeting(x,y+sprite_width,obj_floor2) || place_meeting(x,y+sprite_width,obj_bridge)){
-	gravity = 0;
-}else{
-	gravity = 0.5
-}
 
 if(keyboard_check_pressed(vk_space)){
 	y-=10;
@@ -36,3 +31,10 @@ if(global.lightgot = true){
 	}
 }
 
+if(keyboard_check(ord("D"))){
+	sprite_index = spr_playermoveleft;
+}else if(keyboard_check(ord("A"))){
+	sprite_index = spr_playermoveright;
+}else{
+	sprite_index = spr_player;
+}
