@@ -17,10 +17,15 @@ if(keyboard_check(ord("A"))){
 	
 }
 
+//if(place_meeting(x,y+sprite_width,obj_floor) || place_meeting(x,y+sprite_width,obj_floor2) || place_meeting(x,y+sprite_width,obj_bridge)){
+	//gravity = 0;
+//}else{
+	//gravity = 0.5
+//}
 
-if(keyboard_check_pressed(vk_space)){
-	y-=10;
-}
+//if(keyboard_check_pressed(vk_space)){
+	//y-=10;
+//}
 
 if(global.lightgot = true){
 	if(mouse_check_button_pressed(mb_left)){
@@ -31,10 +36,35 @@ if(global.lightgot = true){
 	}
 }
 
-if(keyboard_check(ord("D"))){
-	sprite_index = spr_playermoveleft;
-}else if(keyboard_check(ord("A"))){
-	sprite_index = spr_playermoveright;
-}else{
-	sprite_index = spr_player;
+// The code below is the logic of jumping and whether player 
+//is on the ground
+
+is_on_ground = place_meeting(x, y + 1, obj_floor);
+
+// jump
+if (is_on_ground && keyboard_check_pressed(vk_space)) {
+    vspeed = jump_speed;
+    is_on_ground = false;
+}
+
+// hold the space, big jump
+if (!is_on_ground && keyboard_check(vk_space)) {
+    jump_hold_time++;
+    if (jump_hold_time <= 10) { 
+        vspeed = max(jump_speed - (gravity * jump_hold_time), max_jump_height);
+    }
+}
+
+// gravity
+if (!is_on_ground) {
+    vspeed += gravity;
+}
+
+// apply to the vertical position
+y += vspeed;
+
+// reset it after on the ground
+if (is_on_ground) {
+    vspeed = 0;
+    jump_hold_time = 0;
 }
