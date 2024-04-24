@@ -68,3 +68,34 @@ if (is_on_ground) {
     vspeed = 0;
     jump_hold_time = 0;
 }
+
+// code below is used to trigger the chatbox
+
+if (keyboard_check_pressed(vk_enter)) {
+     if (!instance_exists(obj_chatbox)) {
+        // 如果对话框实例不存在，创建并激活它
+        var dialogue_instance = instance_create_layer(x, y, "Instances", obj_chatbox);
+
+        dialogue_instance.active = true;
+        dialogue_instance.speaker = "NPC Name"; // 更改为适当的说话者名称
+        dialogue_instance.spr_speaker_avatar = spr_profile; // 更改为适当的头像精灵
+		
+		dialogue_instance.x = room_width / 2;
+		dialogue_instance.y = room_height - sprite_height - 10;
+		dialogue_instance.dialogue_pages = global.dialogue_pages1;
+		dialogue_instance.current_page = 0;
+		
+    }
+	else {
+        var inst = instance_find(obj_chatbox, 0);
+        if (inst.active) {
+            inst.current_page += 1; // 翻页
+            if (inst.current_page >= array_length(inst.dialogue_pages)) {
+                inst.active = false; // 如果是最后一页，则关闭对话框
+                inst.current_page = 0; // 可选：重置页面索引
+				instance_destroy(inst);
+				
+            }
+		}
+	}
+}

@@ -21,6 +21,7 @@
     {"name":"obj_bridge","order":2,"path":"objects/obj_bridge/obj_bridge.yy",},
     {"name":"obj_bridgemanager","order":6,"path":"objects/obj_bridgemanager/obj_bridgemanager.yy",},
     {"name":"obj_bullet","order":9,"path":"objects/obj_bullet/obj_bullet.yy",},
+    {"name":"obj_chatbox","order":13,"path":"objects/obj_chatbox/obj_chatbox.yy",},
     {"name":"obj_filtermanager","order":11,"path":"objects/obj_filtermanager/obj_filtermanager.yy",},
     {"name":"obj_floor","order":1,"path":"objects/obj_floor/obj_floor.yy",},
     {"name":"obj_floor2","order":3,"path":"objects/obj_floor2/obj_floor2.yy",},
@@ -32,6 +33,7 @@
     {"name":"spr_bell","order":5,"path":"sprites/spr_bell/spr_bell.yy",},
     {"name":"spr_bridge","order":2,"path":"sprites/spr_bridge/spr_bridge.yy",},
     {"name":"spr_bullet","order":7,"path":"sprites/spr_bullet/spr_bullet.yy",},
+    {"name":"spr_chatbox","order":12,"path":"sprites/spr_chatbox/spr_chatbox.yy",},
     {"name":"spr_floor2","order":3,"path":"sprites/spr_floor2/spr_floor2.yy",},
     {"name":"spr_light","order":4,"path":"sprites/spr_light/spr_light.yy",},
     {"name":"spr_monster","order":6,"path":"sprites/spr_monster/spr_monster.yy",},
@@ -39,5 +41,6 @@
     {"name":"spr_player","order":1,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"spr_playermoveleft","order":8,"path":"sprites/spr_playermoveleft/spr_playermoveleft.yy",},
     {"name":"spr_playermoveright","order":9,"path":"sprites/spr_playermoveright/spr_playermoveright.yy",},
+    {"name":"spr_profile","order":11,"path":"sprites/spr_profile/spr_profile.yy",},
   ],
 }
