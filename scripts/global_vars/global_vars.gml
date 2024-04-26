@@ -4,3 +4,4 @@ global.nightmare = false;
 global.dream = true;
 global.solved = false;
 global.lightgot = false;
+global.coalgot = false;

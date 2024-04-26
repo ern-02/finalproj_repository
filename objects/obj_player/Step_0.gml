@@ -31,6 +31,12 @@ if(global.lightgot = true){
 	}
 }
 
+if(global.coalgot = true){
+	if(keyboard_check_pressed(ord("Q"))){
+		
+	}
+}
+
 if(keyboard_check(ord("D"))){
 	sprite_index = spr_playermoveleft;
 }else if(keyboard_check(ord("A"))){
