@@ -24,7 +24,6 @@
 <<<<<<< HEAD
     {"name":"obj_coal","order":13,"path":"objects/obj_coal/obj_coal.yy",},
 =======
-    {"name":"obj_chatbox","order":13,"path":"objects/obj_chatbox/obj_chatbox.yy",},
 >>>>>>> origin/master
     {"name":"obj_filtermanager","order":11,"path":"objects/obj_filtermanager/obj_filtermanager.yy",},
     {"name":"obj_floor","order":1,"path":"objects/obj_floor/obj_floor.yy",},
