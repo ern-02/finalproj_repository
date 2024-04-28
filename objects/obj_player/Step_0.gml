@@ -31,16 +31,15 @@ if(global.lightgot = true){
 	}
 }
 
-if(global.coalgot = true){
-	if(keyboard_check_pressed(ord("Q"))){
-		
-	}
-}
 
 if(keyboard_check(ord("D"))){
 	sprite_index = spr_playermoveleft;
 }else if(keyboard_check(ord("A"))){
 	sprite_index = spr_playermoveright;
+}else if(global.coalgot = true){
+	if(keyboard_check_pressed(ord("E"))){
+		sprite_index = spr_playerhidden;
+	}
 }else{
 	sprite_index = spr_player;
 }
