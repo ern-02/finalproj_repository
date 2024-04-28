@@ -60,7 +60,6 @@
     {"id":{"name":"spr_floor2","path":"sprites/spr_floor2/spr_floor2.yy",},},
     {"id":{"name":"spr_light","path":"sprites/spr_light/spr_light.yy",},},
     {"id":{"name":"spr_monster","path":"sprites/spr_monster/spr_monster.yy",},},
-    {"id":{"name":"spr_monster2","path":"sprites/spr_monster2/spr_monster2.yy",},},
     {"id":{"name":"spr_monsterdead","path":"sprites/spr_monsterdead/spr_monsterdead.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_playerhidden","path":"sprites/spr_playerhidden/spr_playerhidden.yy",},},

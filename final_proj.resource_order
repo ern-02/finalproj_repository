@@ -39,7 +39,6 @@
     {"name":"spr_floor2","order":3,"path":"sprites/spr_floor2/spr_floor2.yy",},
     {"name":"spr_light","order":4,"path":"sprites/spr_light/spr_light.yy",},
     {"name":"spr_monster","order":6,"path":"sprites/spr_monster/spr_monster.yy",},
-    {"name":"spr_monster2","order":15,"path":"sprites/spr_monster2/spr_monster2.yy",},
     {"name":"spr_monsterdead","order":10,"path":"sprites/spr_monsterdead/spr_monsterdead.yy",},
     {"name":"spr_player","order":1,"path":"sprites/spr_player/spr_player.yy",},
     {"name":"spr_playerhidden","order":12,"path":"sprites/spr_playerhidden/spr_playerhidden.yy",},
