@@ -1,4 +1,4 @@
-global.playerpositionx = x
+
 
 global.playerspeed = 0
 

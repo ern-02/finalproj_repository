@@ -5,3 +5,5 @@ global.dream = true;
 global.solved = false;
 global.lightgot = false;
 global.coalgot = false;
+global.playerpositionx = 0;
+global.playerpositiony = 0;

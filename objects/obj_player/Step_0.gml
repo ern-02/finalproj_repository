@@ -19,11 +19,27 @@ if(keyboard_check(ord("A"))){
 
 
 if(global.lightgot = true){
-	if(mouse_check_button_pressed(mb_left)){
-		var bullet =instance_create_layer(x,y,"Instances",obj_bullet);
-		bullet.speed = 10;
-		bullet.direction = point_direction(x,y,mouse_x,mouse_y);
-		bullet.image_angle = bullet.direction;
+	if(keyboard_check(ord("Z"))){
+// Check the direction of the player and spawn the beam accordingly
+		var beam_x = x;
+		var beam_y = y;
+
+		// Adjust these values based on the size of your player sprite and beam sprite
+		var offset_x = sprite_width / 2 + sprite_get_width(spr_lightbeam) / 2;
+		var offset_y = 0; // Change this if needed
+
+		// Depending on the player's facing, adjust the beam's creation point
+		switch (image_xscale) {
+		    case 1: // Facing right
+			    beam_x += offset_x;
+				break;
+			case -1: // Facing left
+			    beam_x -= offset_x;
+			    break;
+		}
+
+		// Create the beam object at the calculated position
+		instance_create_layer(beam_x, beam_y + offset_y, "Instances", obj_lightbeam);
 	}
 }
 
@@ -113,6 +129,8 @@ if (keyboard_check_pressed(vk_enter)) {
 	}
 }
 
+global.playerpositionx = x
+global.playerpositiony = y;
 
 
 
