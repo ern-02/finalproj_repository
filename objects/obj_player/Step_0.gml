@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(keyboard_check(ord("D"))){
+if(keyboard_check(ord("D")) && global.canmove){
 	if(keyboard_check(vk_shift)){
 		x+=10;
 	}else{
@@ -8,7 +8,7 @@ if(keyboard_check(ord("D"))){
 	}
 }
 
-if(keyboard_check(ord("A"))){
+if(keyboard_check(ord("A")) && global.canmove){
 	if(keyboard_check(vk_shift)){
 		x-=10;
 	}else{
@@ -28,9 +28,9 @@ if(global.lightgot = true){
 }
 
 
-if(keyboard_check(ord("D"))){
+if(keyboard_check(ord("D")) && global.canmove){
 	sprite_index = spr_playermoveleft;
-}else if(keyboard_check(ord("A"))){
+}else if(keyboard_check(ord("A")) && global.canmove){
 	sprite_index = spr_playermoveright;
 }
 else if(is_dodging){
@@ -107,6 +107,7 @@ if (keyboard_check_pressed(vk_enter)) {
                 inst.active = false; // 如果是最后一页，则关闭对话框
                 inst.current_page = 0; // 可选：重置页面索引
 				instance_destroy(inst);
+				global.canmove = true;
 				
             }
 		}
