@@ -64,7 +64,7 @@
     },
     "name":"spr_monsterdead",
     "playback":1,
-    "playbackSpeed":7.0,
+    "playbackSpeed":9.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
