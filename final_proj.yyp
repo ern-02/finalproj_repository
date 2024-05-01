@@ -35,6 +35,7 @@
   "name":"final_proj",
   "resources":[
     {"id":{"name":"fnt_dialogue","path":"fonts/fnt_dialogue/fnt_dialogue.yy",},},
+    {"id":{"name":"fnt_functionable","path":"fonts/fnt_functionable/fnt_functionable.yy",},},
     {"id":{"name":"obj_bell","path":"objects/obj_bell/obj_bell.yy",},},
     {"id":{"name":"obj_bridge","path":"objects/obj_bridge/obj_bridge.yy",},},
     {"id":{"name":"obj_bridgemanager","path":"objects/obj_bridgemanager/obj_bridgemanager.yy",},},

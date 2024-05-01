@@ -17,6 +17,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"fnt_functionable","order":1,"path":"fonts/fnt_functionable/fnt_functionable.yy",},
     {"name":"obj_bell","order":4,"path":"objects/obj_bell/obj_bell.yy",},
     {"name":"obj_bridge","order":2,"path":"objects/obj_bridge/obj_bridge.yy",},
     {"name":"obj_bridgemanager","order":6,"path":"objects/obj_bridgemanager/obj_bridgemanager.yy",},
