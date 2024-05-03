@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_monster2",
+  "%Name":"obj_npc2",
   "eventList":[],
   "managed":true,
-  "name":"obj_monster2",
+  "name":"obj_npc2",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_monster2",
-    "path":"sprites/spr_monster2/spr_monster2.yy",
+    "name":"spr_npc2",
+    "path":"sprites/spr_npc2/spr_npc2.yy",
   },
   "spriteMaskId":null,
   "visible":true,
