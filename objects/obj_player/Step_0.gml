@@ -159,6 +159,11 @@ if(alive == false){
 	room_goto(deathscreen);
 }
 
+if(y > room_height){
+	alive = false;
+	room_goto(deathscreen);
+}
+
 global.playerpositionx = x
 global.playerpositiony = y;
 
