@@ -1,7 +1,6 @@
 global.playerpositionx = x
 global.canmove = true
 global.playerspeed = 0
-alive = true;
 
 gravity = 0.3; // this variable determine the 'g'
 vspeed = 0; 

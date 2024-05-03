@@ -42,6 +42,7 @@
     {"name":"obj_restart","order":20,"path":"objects/obj_restart/obj_restart.yy",},
     {"name":"obj_start","order":19,"path":"objects/obj_start/obj_start.yy",},
     {"name":"obj_test","order":12,"path":"objects/obj_test/obj_test.yy",},
+    {"name":"Object26","order":25,"path":"objects/Object26/Object26.yy",},
     {"name":"obj_monster3","order":26,"path":"objects/obj_monster3/obj_monster3.yy",},
     {"name":"deathscreen","order":4,"path":"rooms/deathscreen/deathscreen.yy",},
     {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},

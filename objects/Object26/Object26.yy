@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_magnetpiece",
+  "%Name":"Object26",
   "eventList":[],
   "managed":true,
-  "name":"obj_magnetpiece",
+  "name":"Object26",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_magnetpiece",
-    "path":"sprites/spr_magnetpiece/spr_magnetpiece.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
