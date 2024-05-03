@@ -1,4 +1,5 @@
-
-alive = false;
-sprite_index = spr_playerdead;
-alarm[0] = 10*fps;
+if(!is_dodging){
+	alive = false;
+	sprite_index = spr_playerdead;
+	alarm[0] = 10*fps;
+}

@@ -79,10 +79,13 @@ else{
 
 if(global.coalgot == true){
 	if (keyboard_check_pressed(ord("E"))) {
-	    is_dodging = !is_dodging;  
+	    is_dodging = !is_dodging;
 	}
 }
 	
+if(is_dodging){
+	xspd = (rightkey - leftkey) * move_speed * 0.5;
+}
 	
 if(global.magnetgot == true){
 	if(keyboard_check_pressed(ord("R"))){
