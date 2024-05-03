@@ -1,5 +1,5 @@
 if (!instance_exists(obj_chatbox)) {
-    var dialogue_instance = instance_create_layer(x, y, "Instances", obj_chatbox);  // 确保对话框出现在合适的位置
+    var dialogue_instance = instance_create_layer(x, y, "Dialogue", obj_chatbox);  // 确保对话框出现在合适的位置
 	dialogue_instance.active = true;
     dialogue_instance.speaker = "NPC Name"; // 更改为适当的说话者名称
 	dialogue_instance.spr_speaker_avatar = spr_profile; // 更改为适当的头像精灵

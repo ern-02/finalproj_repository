@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(keyboard_check(ord("D")) && global.canmove){
+/*if(keyboard_check(ord("D")) && global.canmove){
 	if(keyboard_check(vk_shift)){
 		x+=10;
 	}else{
@@ -15,7 +15,11 @@ if(keyboard_check(ord("A")) && global.canmove){
 		x-=5;
 	}
 	
-}
+}*/
+leftkey = keyboard_check(ord("A"));
+rightkey = keyboard_check(ord("D"));
+
+xspd = (rightkey - leftkey) * move_speed;
 
 
 if(global.lightgot = true){
@@ -43,6 +47,10 @@ if(global.lightgot = true){
 	}
 }
 
+if(place_meeting(x + xspd,y,obj_icewall)){
+	xspd = 0;
+}
+
 
 if(keyboard_check(ord("D")) && global.canmove){
 	sprite_index = spr_playermoveleft;
@@ -68,7 +76,7 @@ if(global.coalgot == true){
 // The code below is the logic of jumping and whether player 
 //is on the ground
 
-is_on_ground = place_meeting(x, y + 1, obj_floor);
+is_on_ground = place_meeting(x, (y ) + 1, obj_floor);
 
 // jump
 if (is_on_ground && keyboard_check_pressed(vk_space)) {
@@ -89,6 +97,8 @@ if (!is_on_ground) {
     vspeed += gravity;
 }
 
+x += xspd;
+
 // apply to the vertical position
 y += vspeed;
 
@@ -103,7 +113,7 @@ if (is_on_ground) {
 if (keyboard_check_pressed(vk_enter)) {
      if (!instance_exists(obj_chatbox)) {
         // 如果对话框实例不存在，创建并激活它
-        var dialogue_instance = instance_create_layer(x, y, "Instances", obj_chatbox);
+        var dialogue_instance = instance_create_layer(x, y, "Dialogue", obj_chatbox);
 
         dialogue_instance.active = true;
         dialogue_instance.speaker = "NPC Name"; // 更改为适当的说话者名称
