@@ -23,7 +23,7 @@ xspd = (rightkey - leftkey) * move_speed;
 
 
 if(global.lightgot = true){
-	if(keyboard_check(ord("Z"))){
+	if(keyboard_check(ord("F"))){
 // Check the direction of the player and spawn the beam accordingly
 		var beam_x = x;
 		var beam_y = y;
@@ -51,14 +51,23 @@ if(place_meeting(x + xspd,y,obj_icewall)){
 	xspd = 0;
 }
 
+if(place_meeting(x + xspd,y,obj_wall)){
+	xspd = 0;
+}
+
 
 if(keyboard_check(ord("D")) && global.canmove){
 	sprite_index = spr_playermoveleft;
 }else if(keyboard_check(ord("A")) && global.canmove){
 	sprite_index = spr_playermoveright;
 }
-else if(is_dodging){
+else if(keyboard_check(ord("F")) && global.lightgot){
+	sprite_index = spr_playertorch;
+}
+else if(is_dodging && room == Room2){
 	sprite_index = spr_playerhidden;  
+}else if(keyboard_check(ord("R")) && global.magnetused){
+	sprite_index = spr_playermagnet;
 }
 
 else{

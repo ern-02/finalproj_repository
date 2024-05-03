@@ -7,8 +7,12 @@ if(global.solved == true){
 
 if(global.nightmare == true){
 	if(room == Room1){
-		instance_create_layer(x,y,"Instances",obj_monster);
+		if(!instance_exists(obj_monster)){
+			instance_create_layer(x,y,"Instances",obj_monster);
+		}
 	}else if(room == Room3){
-		instance_create_layer(x,y,"Instances",obj_monster3);
+		if(!instance_exists(obj_monster3)){
+			instance_create_layer(x,y,"Instances",obj_monster3);
+		}
 	}
 }
