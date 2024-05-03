@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_icewall",
+    "path":"sprites/spr_icewall/spr_icewall.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
