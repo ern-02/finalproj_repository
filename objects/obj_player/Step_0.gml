@@ -71,6 +71,12 @@ if(global.coalgot == true){
 	}
 }
 	
+	
+if(global.magnetgot == true){
+	if(keyboard_check_pressed(ord("R"))){
+		global.magnetused = true;
+	}
+}
 
 
 // The code below is the logic of jumping and whether player 
@@ -138,6 +144,10 @@ if (keyboard_check_pressed(vk_enter)) {
             }
 		}
 	}
+}
+
+if(alive == false){
+	room_goto(deathscreen);
 }
 
 global.playerpositionx = x
