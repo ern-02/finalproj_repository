@@ -146,6 +146,10 @@ if (keyboard_check_pressed(vk_enter)) {
 	}
 }
 
+if(alive == false){
+	room_goto(deathscreen);
+}
+
 global.playerpositionx = x
 global.playerpositiony = y;
 
