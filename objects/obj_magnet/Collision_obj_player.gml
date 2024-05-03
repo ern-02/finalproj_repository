@@ -8,6 +8,6 @@ if (!instance_exists(obj_chatbox)) {
 		
 	dialogue_instance.x = room_width / 2;
 	dialogue_instance.y = room_height - sprite_height - 240;
-	dialogue_instance.dialogue_pages = global.dialogue_pages_coal; // change this global variable to the global variable that belong to the stuff
+	dialogue_instance.dialogue_pages = global.dialogue_pages_magnet; // change this global variable to the global variable that belong to the stuff
 	dialogue_instance.current_page = 0;
 }
