@@ -20,6 +20,9 @@ leftkey = keyboard_check(ord("A"));
 rightkey = keyboard_check(ord("D"));
 
 xspd = (rightkey - leftkey) * move_speed;
+if(room == Room3){
+	xspd = (rightkey - leftkey) * move_speed * 0.5;
+}
 
 
 if(global.lightgot = true){

@@ -10,9 +10,5 @@ if(global.nightmare == true){
 		if(!instance_exists(obj_monster)){
 			instance_create_layer(x,y,"Instances",obj_monster);
 		}
-	}else if(room == Room3){
-		if(!instance_exists(obj_monster3)){
-			instance_create_layer(x,y,"Instances",obj_monster3);
-		}
 	}
 }
